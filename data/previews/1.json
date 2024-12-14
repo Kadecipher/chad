@@ -1,0 +1,40 @@
+{
+  "bookTitle": "The void",
+  "author": "Chad miller",
+  "chapters": [
+    {
+      "chapterTitle": "Chapter 1: The Beginning",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "content": "Kade Cipher is comming",
+          "isAvailable": true,
+          "requireAccount": true
+        },
+        {
+          "pageNumber": 2,
+          "content": "Kade Cipher is comming",
+          "isAvailable": true,
+          "requireAccount": true
+        }
+      ]
+    },
+    {
+      "chapterTitle": "Chapter 2: The Journey",
+      "pages": [
+        {
+          "pageNumber": 3,
+          "content": "Kade Cipher is comming",
+          "isAvailable": true,
+          "requireAccount": true
+        },
+        {
+          "pageNumber": 4,
+          "content": "Kade Cipher is comming",
+          "isAvailable": true,
+          "requireAccount": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "user_id": "0",
+            "encrypted": "i/ulU2dM4b4Me45i8rehGaBg44IMwYlW+RbGnvGkRjTNB0+weoFB7kPWoD/bafi0"
+        },
+        {
+            "user_id": "1",
+            "encrypted": "7uUSJKvzmD9cJmddDL1nFhMRavAGsX8uNfWdoQTYBbvm+LLgoCkxeMyI9TpxyKxG"
+        },
+        {
+            "user_id": "2",
+            "encrypted": "K2ta9Go9dtOcL7U+IYfJxxPL5o1gNlVPwhJR+8fY2r8j22hPXzamYgZ8m3n4HyaHflglZO/DQLYeucEjvHwl4A=="
+        }
+    ]
+}

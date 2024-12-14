@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  button.signInBtn:hover,button.PurchaseBtn:hover {
+    background-color: #abb8c3 !important;
+    color: #ed2939 !important;
+  }
+  button.signInBtn, button.PurchaseBtn {
+    position: relative;
+    z-index: 9999; 
+    background-color: #ed2939;
+    color: #abb8c3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+  }
+  nav {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .content-wrapper {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-top: 80px;
+    padding-top: 20px;
+    min-height: calc(100vh - 100px);
+    user-select: none;
+  }
+
+  #pageContent {
+    padding: 20px;
+    background-color: black;
+    color: #abb8c3;
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    user-select: none;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 101;
+  }
+
+  #chapterTitle {
+    color: #abb8c3;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 10;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  #pageNumber {
+    font-size: 24px;
+    color: #abb8c3;
+    margin-top: 10px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 15;
+  }
+
+  #prevBtn,
+  #nextBtn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #ed2939;
+    color: #abb8c3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+    margin: 20px;
+    position: absolute;
+    bottom: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  #prevBtn:hover,
+  #nextBtn:hover {
+    background-color: #abb8c3;
+    color: #ed2939;
+  }
+
+  #prevBtn {
+    left: 20px;
+  }
+
+  #nextBtn {
+    right: 20px;
+  }
+  @media screen and (max-width: 1800px) {
+    #pageNumber {
+      padding-top: 60px;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .content-wrapper {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: auto;
+      padding-top: 20px;
+    }
+
+    #pageContent {
+      max-width: 60%;
+      max-height: 70vh;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px;
+      width: 100%;
+    }
+
+    #pageContent {
+      max-width: 90%;
+      padding: 10px;
+      overflow-y: auto;
+    }
+
+    .header-container {
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 0 20px;
+      margin-bottom: 10px;
+    }
+
+    #chapterTitle {
+      font-size: 20px;
+    }
+
+    #pageNumber {
+      font-size: 20px;
+      padding-top: 300px;
+      margin-top: 0;
+      height: 100vh;
+    }
+
+    #prevBtn,
+    #nextBtn {
+      font-size: 16px;
+      padding: 10px 20px;
+      margin: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content-wrapper {
+      height: auto;
+    }
+
+    #chapterTitle {
+      font-size: 18px;
+    }
+
+    #pageNumber {
+      font-size: 18px;
+      padding-top: 150px;
+      margin-top: 0;
+      height: 100vh;
+    }
+
+    #pageContent {
+      max-height: calc(100vh - 120px);
+    }
+
+    #prevBtn,
+    #nextBtn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+
+  @media screen and (max-width: 1800px) {
+    .content-wrapper {
+      padding-top: 80px;
+    }
+  }
+  @media screen and (max-width: 1401px) {
+    .content-wrapper {
+      padding-top: 80px;
+    }
+  }
+  @media (orientation: landscape) and (max-width: 768px) {
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      height: 100vh;
+      width: 100%;
+    }
+
+    #pageContent {
+      max-width: 90%;
+      max-height: 70%;
+      padding: 15px;
+      overflow-y: auto;
+    }
+
+    #prevBtn,
+    #nextBtn {
+      font-size: 16px;
+      padding: 12px 20px;
+      width: auto;
+    }
+  }
+  #check:checked ~ .modal {
+    display: none;
+  }

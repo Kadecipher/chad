@@ -1,0 +1,12 @@
+[
+  {
+    "userId": "0",
+    "productId": "book",
+    "price": "20"
+  },
+  {
+    "userId": "0",
+    "productId": "tshirt",
+    "price": "25"
+  }
+]

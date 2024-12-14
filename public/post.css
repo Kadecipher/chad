@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    box-sizing: border-box; 
+}
+
+nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.content-wrapper {
+    padding: 20px;
+    margin-top: 150px; 
+    flex: 1; 
+    box-sizing: border-box; 
+}
+
+#posts-container, #messages-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post, .message-box {
+    padding: 20px;
+    border: 3px solid #444;
+    border-radius: 5px; 
+    background: #1a1a1a;
+    color: #fff; 
+    max-width: 800px; 
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box; 
+}
+.message-box{
+    border: 3px solid #ED2939;
+}
+.post h2, .message-box h4 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.post p, .message-box p {
+    margin-top: 10px;
+}
+
+#create-post-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid red; 
+    border-radius: 5px; 
+    background-color: #000; 
+    color: #fff; 
+    max-width: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    box-sizing: border-box; 
+}
+
+#create-post-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#create-post-form label {
+    margin-top: 10px;
+}
+
+#create-post-form input, 
+#create-post-form textarea {
+    padding: 10px;
+    font-size: 1em; 
+    margin-top: 5px;
+    border: 1px solid #444; 
+    background-color: #222; 
+    color: #fff; 
+    box-sizing: border-box; 
+}
+
+#create-post-form input::placeholder, 
+#create-post-form textarea::placeholder {
+    color: #888; 
+}
+
+#create-post-form button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1em; 
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+#create-post-form button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .post, .message-box {
+        max-width: 100%; 
+        padding: 15px;
+    }
+
+    .post h2, .message-box h4 {
+        font-size: 1.2em;
+    }
+
+    .post p, .message-box p {
+        font-size: 0.9em;
+    }
+}
+
+.hide14 {
+    display: none; 
+}
+
+.project_x {
+    display: none;
+}
+
+.red-text {
+    color: red;
+}
+.post-image {
+    width: 80%;          
+    max-width: 400px;    
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px; 
+    display: block;      
+    margin-left: auto;
+    margin-right: auto;  
+}

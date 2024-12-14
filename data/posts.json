@@ -1,0 +1,15 @@
+[
+    {
+        "id": "1",
+        "title": "Post Title 1",
+        "description": "Description of post 1",
+        "content": "Im lazy so i am just gonna use this image",
+        "imageSrc": "blog_images/image_1.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Post Title 2",
+        "description": "Description of post 2",
+        "content": "Content of post 2"
+    }
+]

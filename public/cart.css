@@ -1,0 +1,112 @@
+/* Ensure the container spans the full width and applies flex layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    position: relative; /* Ensures that child elements are positioned relative to this container */
+}
+
+/* Style for product images */
+.product-images {
+    width: 60%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align images to the left */
+}
+
+.product-images img {
+    width: 100%;
+    max-width: 300px; /* Set a max-width for the images */
+    margin-bottom: 10px; /* Space between images */
+}
+
+/* Style for the checkout section */
+.checkout-section {
+    width: 35%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the start */
+    border: 1px solid #1a1a1a; /* Keep the same border styling */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixed positioning to keep it in view as you scroll */
+    right: 0; /* Align to the right side of the screen */
+    top: 50%; /* Center vertically from the top */
+    transform: translateY(-50%); /* Adjust for exact vertical centering */
+    background-color: #000; /* Gray background color */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+/* Style for the table in the checkout section */
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#cart-table thead th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #1a1a1a; /* Bottom border for header row */
+    font-weight: bold; /* Bold text for headers */
+}
+
+#cart-table tbody td {
+    padding: 10px;
+    border: 1px solid #1a1a1a;
+    text-align: left;
+}
+
+/* Style for table rows */
+#cart-table tbody tr:nth-child(even) {
+    background-color: #1a1a1a; /* Alternate row color for readability */
+}
+
+/* Style for the checkout summary */
+#cart-summary {
+    width: 100%; /* Ensure the summary takes full width */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align total and button to the left */
+    margin-top: 20px; /* Add space above the summary */
+}
+
+/* Style for the checkout button */
+#checkout-button {
+    background-color: #f00; /* Red background for the button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px; /* Space above the button */
+    width: 100%; /* Full width button */
+    text-align: center; /* Center text within the button */
+    font-size: 16px; /* Increase font size for better readability */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#checkout-button:hover {
+    background-color: #c00; /* Darker red on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-images, .checkout-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-images img {
+        max-width: 100%;
+    }
+
+    #checkout-button {
+        width: 100%;
+    }
+}

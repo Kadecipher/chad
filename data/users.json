@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "user_id": 0,
+      "encrypted": "8I5Gq14uFgEdVJLlugWCVIS9cnFR+srL8NNpa05YUL8Jz/Ba9p318/Pj0eGKDEXqd+KnupIA8+Ta7djYuqKi3Rm0WLP7f3hR0PaOGBtlHcw="
+    },
+    {
+      "user_id": 1,
+      "encrypted": "FbwbqaYox0331DYqmtMcT8ivs+RlOnY54oDGNuoQ3WEyAe4LZbL0N8TrOsJ38etpTRRwrPyMfv0eFmcPZGUBjXr7XfrQnr5NGGrFCbx1rfc="
+    },
+    {
+      "user_id": 2,
+      "encrypted": "+lLH12QmpEK3tPEmZAPT4XzuR486LnNP/wixNqB6rtZGnLPrTScagZEeCm8xMADfNojpZgjj4i6twUlz/ftfXQ=="
+    },
+    {
+      "user_id": 3,
+      "encrypted": "K1S9QBZATVtIrjvDdi8pJ/yLT3UdaU3cuZcJ3hajHUdts8b21fQ9vWNb60k35X/A"
+    },
+    {
+      "user_id": 4,
+      "encrypted": "K1RHwCLbsWLU5M3xronKdqKX9va0VkvAfNnvq7tflOB2jI3PJFkSMDguhsJxx0OX"
+    },
+    {
+      "user_id": 5,
+      "encrypted": "VNyJSbCORT6FQpDO58r1qqvdZUZdgi7y4tdRRiSLbvUCEYoUQcEEFlJ1ZpH+T9SnxedbnyxCWCFsUYJP+jOoaA=="
+    }
+  ]
+}
